@@ -1,0 +1,281 @@
+/* Fonts */
+@font-face {
+    font-family: 'Woliu Maners';
+    src: url('/fonts/woliu_maners/Woliu\ Maners\ Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    background-image: url('/images/deze_achtergrond.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: black;
+    margin: 0;
+    z-index: 2;
+}
+
+.header_flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.header_logo {
+    margin-right: auto;
+}
+
+.header_item {
+    padding: 0 2rem;
+    font-family: 'Woliu Maners';
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.header_item img {
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.header_item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header_item a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.header_item a:hover {
+    color: red;
+}
+
+main p {
+    color: white
+}
+
+/* Main content */
+main {
+    text-align: center;
+}
+
+main h1,
+main h2 {
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    padding: 1rem;
+    color: white;
+    font-family: 'Woliu Maners';
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    padding: 0rem;
+}
+
+main img {
+    width: 100%;
+}
+
+main a {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    margin-top: auto;
+}
+
+.footer_flexbox {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.footer_flexbox_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer_flexbox_box h1 {
+    font-family: 'Woliu Maners';
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer_flexbox_box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_flexbox_box li {
+    margin: 0.5rem 0;
+}
+
+.footer_flexbox_box a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_flexbox_box a:hover {
+    color: red;
+}
+
+footer img {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sponsors {
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.gridbox_DJ {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.gridbox_DJ_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gridbox_DJ_item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.gridbox_DJ_item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.gridbox_DJ_item img {
+    width: 20rem;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+.gridbox_DJ_item p {
+    flex: 1;
+    color: white;
+    font-family: 'Woliu Maners';
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+}
+
+/* Section Styling */
+section:nth-of-type(2) {
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.griddy {
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.griddy img {
+    width: 30rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer_flexbox {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    footer img {
+        height: 2.5rem;
+    }
+
+    .header_flexcontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header_logo {
+        margin-bottom: 1rem;
+    }
+
+    .header_item {
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+
+    .gridbox_DJ {
+        grid-template-columns: 1fr;
+    }
+
+    .gridbox_DJ_item img {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+
+    footer img {
+        width: 18rem;
+    }
+}

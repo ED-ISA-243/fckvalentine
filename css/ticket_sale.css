@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Utendo-Bold';
+    src: url('/fonts/Utendo-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.main_text {
+    color: white;
+    padding: 2rem 2rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.main_text h1 {
+    font-family: "Utendo-Bold";
+}
+
+.main_text p {
+    padding: 0 25rem 0 25rem;
+
+}
+
+.main_text ul li {
+    font-family: 'Utendo-Bold';
+}
+
+.main_text a {
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.main_text a:hover {
+    background-color: rgba(142, 3, 2, 255);
+    transform: scale(1.5);
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    background-image: url('/images/deze_achtergrond.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    z-index: 2;
+    position: relative;
+}
+
+.header_flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.header_logo {
+    flex: 0 0 auto;
+    margin-right: auto;
+}
+
+.header_item {
+    padding: 0 2rem;
+    font-family: 'Utendo-Bold';
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.header_item img {
+    margin: 1rem 0 0.5rem;
+    height: 8rem;
+    object-fit: contain;
+}
+
+.header_item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header_item a:visited {
+    color: white;
+}
+
+.header_item a:hover {
+    color: red;
+}
+
+main p {
+    color: white;
+}
+
+main {
+    text-align: justify;
+}
+
+main h1,
+main h2 {
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    padding: 1rem;
+    color: white;
+    font-family: 'Woliu Maners';
+}
+
+p {
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    padding: 0rem;
+}
+
+main img {
+    width: 100%;
+}
+
+main a {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.ticket-button {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    border-radius: 10rem;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer_flexbox {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer_flexbox_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer_flexbox_box h1 {
+    font-family: 'Woliu Maners', sans-serif;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer_flexbox_box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_flexbox_box li {
+    margin: 1rem 0;
+}
+
+.footer_flexbox_box a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+}
+
+.footer_flexbox_box a:hover {
+    color: red;
+}
+
+footer img {
+    height: 12rem;
+    width: auto;
+    margin-top: 1.5rem;
+}
+
+section:nth-of-type(2) {
+    text-align: center;
+    padding-top: 20vh;
+}
+
+@media (max-width: 768px) {
+    .header_flexcontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header_logo {
+        margin-right: 0;
+        text-align: center;
+        margin: 1rem;
+        max-width: 8rem;
+    }
+
+    .main_text p {
+        padding: 0 1rem;
+        text-align: justify;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .main_text ul li {
+        text-align: left;
+        margin-bottom: 0.8rem;
+        margin-left: 0;
+    }
+}
