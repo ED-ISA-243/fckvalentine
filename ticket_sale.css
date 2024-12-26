@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Utendo-Bold';
-    src: url('/fonts/Utendo-Bold.ttf') format('truetype');
+    src: url('Utendo-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,9 +13,45 @@ body {
     width: 100%;
 }
 
+.main_text {
+    color: white;
+    padding: 2rem 2rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.main_text h1 {
+    font-family: "Utendo-Bold";
+}
+
+.main_text p {
+    padding: 0 25rem 0 25rem;
+
+}
+
+.main_text ul li {
+    font-family: 'Utendo-Bold';
+}
+
+.main_text a {
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.main_text a:hover {
+    background-color: rgba(142, 3, 2, 255);
+    transform: scale(1.5);
+}
+
+ul li {
+    list-style: none;
+}
+
 body {
     margin: 0;
-    background-image: url('/images/deze_achtergrond.png');
+    background-image: url('deze_achtergrond.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,38 +108,12 @@ header {
     color: red;
 }
 
-.intro {
-    text-align: center;
-    width: 100%;
-}
-
-.intro p {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 0;
+main p {
     color: white;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-    line-height: 1.4;
-    font-size: 1.5rem;
-}
-
-p {
-    color: white;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-    line-height: 1.4;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-bottom: 1.5rem;
 }
 
 main {
-    text-align: center;
-}
-
-main p {
-    color: white;
-    line-height: 1.6;
-    font-size: 1.5rem;
+    text-align: justify;
 }
 
 main h1,
@@ -114,20 +124,20 @@ main h2 {
     font-family: 'Woliu Maners';
 }
 
+p {
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+
 main h1 {
     text-align: center;
-    font-size: 5rem;
 }
 
 main h2 {
     padding: 0rem;
-    font-size: 4rem;
 }
 
 main img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 main a {
@@ -139,59 +149,13 @@ main a {
     background-color: black;
     border-radius: 5rem;
     text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    font-weight: bolder;
 }
 
-.extra_images {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto;
-    padding: 2rem;
-    flex-wrap: wrap;
-}
-
-.extra_images img {
-    width: clamp(15rem, 30%, 30rem);
-    max-width: 100%;
-}
-
-.wie_zijn_wij {
-    text-align: center;
-    width: 100%;
-}
-
-.wie_zijn_wij p {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 0;
-    color: white;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-    line-height: 1.4;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.boodschap {
-    text-align: center;
-    width: 100%;
-}
-
-.boodschap p {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 0;
-    color: white;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-    line-height: 1.4;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.last_image {
-    width: 60%;
-    margin: 4rem;
+.ticket-button {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    border-radius: 10rem;
 }
 
 footer {
@@ -261,15 +225,6 @@ section:nth-of-type(2) {
     padding-top: 20vh;
 }
 
-.griddy {
-    display: grid;
-    grid-template-columns: 2fr;
-}
-
-.griddy img {
-    width: 30rem;
-}
-
 @media (max-width: 768px) {
     .header_flexcontainer {
         flex-direction: column;
@@ -284,81 +239,16 @@ section:nth-of-type(2) {
         max-width: 8rem;
     }
 
-    .intro,
-    .wie_zijn_wij,
-    .boodschap {
-        padding: 2rem;
+    .main_text p {
+        padding: 0 1rem;
         text-align: justify;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .intro h2,
-    .wie_zijn_wij h2,
-    .boodschap h2 {
-        font-size: 2.5rem;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    .intro p,
-    .wie_zijn_wij p,
-    .boodschap p {
-        max-width: 100%;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        padding: 1rem;
+        line-height: 1.6;
         margin-bottom: 1.5rem;
     }
 
-    .extra_images {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .extra_images img {
-        width: 80%;
-        max-width: 20rem;
-    }
-
-    .last_image {
-        width: 90%;
-        max-width: 30rem;
-        margin: 2rem auto;
-    }
-
-    footer {
-        padding: 2rem 1rem;
-    }
-
-    .footer_flexbox {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .footer_flexbox_box {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .footer_flexbox_box h1 {
-        font-size: 1.5rem;
-    }
-
-    .footer_flexbox_box ul {
-        padding: 0;
-    }
-
-    .footer_flexbox_box li {
-        margin: 0.5rem 0;
-    }
-
-    footer img {
-        max-width: 8rem;
-        height: auto;
+    .main_text ul li {
+        text-align: left;
+        margin-bottom: 0.8rem;
+        margin-left: 0;
     }
 }

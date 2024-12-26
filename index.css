@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Utendo-Bold';
-    src: url('/fonts/Utendo-Bold.ttf') format('truetype');
+    src: url('Utendo-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     width: 100%;
-    background-image: url('/images/deze_achtergrond.png');
+    background-image: url('deze_achtergrond.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
