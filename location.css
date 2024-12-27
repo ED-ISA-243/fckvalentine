@@ -47,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw;
+    padding: 1rem;
     flex-wrap: wrap;
 }
 
@@ -57,7 +57,7 @@ header {
 }
 
 .header_item {
-    padding: 0 2vw;
+    padding: 0 2rem;
     font-family: 'Utendo-Bold';
     height: 2.5rem;
     display: flex;
